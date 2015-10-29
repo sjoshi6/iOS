@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dKz-Af-SgN" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="RBv-WK-3Ph" userLabel="FirstCard">
+                                <rect key="frame" x="0.0" y="215" width="120" height="170"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Aww-y6-BVh"/>
+                                    <constraint firstAttribute="width" constant="120" id="o6a-gV-tuZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="8Pr-vf-nl9" userLabel="SecondCard">
+                                <rect key="frame" x="0.0" y="215" width="120" height="170"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9th-9A-tl6"/>
+                                    <constraint firstAttribute="height" constant="170" id="J4D-4a-RFa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4u-sS-UhP">
+                                <rect key="frame" x="284.5" y="0.0" width="31" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Deal"/>
+                                <connections>
+                                    <action selector="dealButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w3S-DS-lkc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dKz-Af-SgN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="343-ch-SGQ"/>
+                            <constraint firstItem="RBv-WK-3Ph" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="Azd-p2-c5m"/>
+                            <constraint firstItem="8Pr-vf-nl9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GVp-xc-2Nx"/>
+                            <constraint firstAttribute="trailing" secondItem="8Pr-vf-nl9" secondAttribute="trailing" constant="50" id="Po6-vJ-f2X"/>
+                            <constraint firstItem="RBv-WK-3Ph" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="VDZ-8X-AiT"/>
+                            <constraint firstAttribute="bottom" secondItem="dKz-Af-SgN" secondAttribute="bottom" id="a6R-AK-H0s"/>
+                            <constraint firstItem="dKz-Af-SgN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cil-D2-TFX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x4u-sS-UhP" secondAttribute="bottom" constant="150" id="i3u-OF-UyJ"/>
+                            <constraint firstItem="RBv-WK-3Ph" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pnJ-L7-SW6"/>
+                            <constraint firstAttribute="bottom" secondItem="x4u-sS-UhP" secondAttribute="bottom" constant="50" id="tyV-ms-RNH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Pr-vf-nl9" secondAttribute="trailing" constant="150" id="vmD-rD-lry"/>
+                            <constraint firstItem="x4u-sS-UhP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vmm-80-6E6"/>
+                            <constraint firstAttribute="trailing" secondItem="dKz-Af-SgN" secondAttribute="trailing" id="yiv-dd-Ovs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Po6-vJ-f2X"/>
+                                <exclude reference="vmD-rD-lry"/>
+                                <exclude reference="Azd-p2-c5m"/>
+                                <exclude reference="VDZ-8X-AiT"/>
+                                <exclude reference="tyV-ms-RNH"/>
+                                <exclude reference="i3u-OF-UyJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="vmD-rD-lry"/>
+                                <include reference="Azd-p2-c5m"/>
+                                <include reference="tyV-ms-RNH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Po6-vJ-f2X"/>
+                                <include reference="VDZ-8X-AiT"/>
+                                <include reference="i3u-OF-UyJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="dKz-Af-SgN" id="69F-47-75f"/>
+                        <outlet property="dealButton" destination="x4u-sS-UhP" id="m77-OP-kqo"/>
+                        <outlet property="firstCardImageView" destination="RBv-WK-3Ph" id="swF-Ai-Sbf"/>
+                        <outlet property="secondCardImageView" destination="8Pr-vf-nl9" id="stB-Y9-JhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="120" height="170"/>
+        <image name="background" width="667" height="622"/>
+    </resources>
+</document>
